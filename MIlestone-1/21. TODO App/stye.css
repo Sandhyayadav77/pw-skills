@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#mainBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mainBody h1{
+    text-align: center;
+    margin-top: 30px;
+}
+#mainBody p{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 20px;
+}
+#enterTodo{
+    padding: 8px 20px;
+    margin-top: 15px ;
+    border-radius: 0.7rem;
+    border: transparent;
+    width: 27%;
+    font-size: 1.2rem;
+    color: blue;
+    outline: none;
+}
+/* add todo button */
+#addTodo{
+    margin-top: 10px ;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    color: white;
+    border: transparent;
+    padding: 0.5rem 0.8rem;
+    background-color: rgb(244, 8, 8);
+ 
+}
+#addTodo:hover{
+    color: red;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+
+h1 {
+    text-align: center;
+    margin-top: 14%;
+    font-size: 40px;
+}
+
+#changeColor {
+    padding: 10px 13px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius:10px ;
+    border: none;
+    font-size: 22px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#changeColor:hover{
+    color: white;
+    background-color: rgb(244, 32, 32);
+    box-shadow: 5px 5px 5px white;
+
+}

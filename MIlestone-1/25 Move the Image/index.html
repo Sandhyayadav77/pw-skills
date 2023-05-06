@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="myImage" src="./Image.png" alt=""></img>
+    <script>
+        const img = document.getElementById('myImage');
+        let x = 0;
+        let y = 0;
+        document.addEventListener('keydown', (e) => {
+            switch (e.keyCode) {
+                case 37:
+                    x = x - 10;
+                    console.log("leftKey is pressed", e.key);
+                    break;
+                case 38:
+                    y = y - 10;
+                    console.log("UpKey is pressed");
+                    break;
+                case 39:
+                    x = x + 10;
+                    console.log("rightKey is pressed");
+                    break;
+                case 40:
+                    y = y +10;
+                    console.log("DownKey is pressed");
+                    break;
+            }
+            img.style.left = x + "px";
+            img.style.top = y + "px";
+        });
+    </script>
+</body>
+
+</html>
